@@ -1,0 +1,131 @@
+.coding{
+    font-size: 15pt;
+    line-height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 900px;
+    margin: auto;
+}
+
+
+.coding input[type=checkbox] + label{
+    display: block;
+    letter-spacing: 0.8px;
+}
+
+.coding input[type=checkbox]{
+    display: none;
+}
+
+.coding input[type=checkbox] + label:before{
+    content: "\2714";
+    background-color: red;
+    color: white;
+    width: 11px;
+    height: 11px;
+    padding: 1px 7px;
+    border-radius: 100%;
+    margin-right: 20px;
+}
+
+#img_coding img{
+    width: 400px;
+    height: auto;
+}
+
+#equipe{
+    max-width: 900px;
+    margin: 20px auto;
+
+}
+
+#equipe h1{
+    font-size: 15pt;
+}
+
+
+#contact{
+    display: flex;
+    align-items: center;
+    max-width: 900px;
+    margin: auto;
+}
+
+#contact input[type=text]{
+    margin-right: 15px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 15pt;
+    width: 220px;
+    height: 43px;
+    padding: 0px 17px;
+    border-radius: 8px;
+    border: none;
+    background-color: rgb(211, 211, 211);
+
+}
+
+#contact input[type=text]:focus{
+    border: none;
+
+}
+#contact input[type=text]:hover{
+    opacity: 0.8;
+}
+
+#contact input[type=button]{
+    font-family: 'Oswald', sans-serif;
+    font-size: 15pt;
+    width: 220px;
+    height: 43px;
+    padding: 0px 17px;
+    border-radius: 8px;
+    border: none;
+    background-color: red;
+    color: white;
+}
+
+#contact input[type=button]:hover{
+    background-color: rgb(219, 10, 10);
+}
+
+@media (max-width: 975px){
+    .coding{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    #contact{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #contact input[type=text]{
+        margin: 0;
+        width: 330px;
+        height: 43px;
+    }
+    #contact input[type=button]{
+        width: 330px;
+        height: 43px;
+    }
+    #contact input{
+        margin: 15px 0;
+
+    }
+    #equipe{
+        text-align: center;
+    }
+
+    #img_coding img{
+        margin-bottom: 20px;
+    }
+}
+
+
+@media (max-width: 480px){
+    #img_coding img{
+        width: 350px;
+    }
+}

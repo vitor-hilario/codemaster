@@ -1,0 +1,65 @@
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 14px;
+}
+
+nav a{
+    text-decoration: none;
+    color: black;
+    margin: 0 20px 0 20px;
+}
+
+#login-menu{
+    background-color: red;
+    border-radius: 10px;
+    color: white;
+    padding: 6px 45px;
+}
+
+#login-menu:hover{
+    background-color: rgb(219, 10, 10);
+}
+
+#codar{
+    font-size: 30pt;
+    color: rgb(0, 0, 0);
+
+}
+
+#codar i{
+    color: red;
+
+}
+
+#text-menu{
+    font-size: 15pt;
+}
+
+.text:hover{
+    color: rgb(255, 0, 0);
+}
+
+@media (max-width: 640px){
+    #login-menu{
+        display: none;
+    }
+}
+
+@media (max-width: 480px){
+    #login-menu{
+        display: none;
+    }
+    nav{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        margin: 14px;
+    }
+    #codar{
+        margin-bottom: 8px;
+    }
+}
+

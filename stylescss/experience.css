@@ -1,0 +1,53 @@
+.experience{
+    max-width: 900px;
+    margin: 100px auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#exp1, #exp2{
+    padding: 20px;
+    width: 435px;
+    display: flex;
+    background-color: rgb(211, 211, 211);
+    border-radius: 10px;
+    align-items: center;
+}
+
+#exp1 i::before, #exp2 i::before{
+    content: "\25CF";
+    color: rgb(255, 0, 0);
+    padding: 26px 32px;
+    background-color: red;
+    border-radius: 100%;
+    margin-right: 25px;
+}
+
+.experience h1{
+    font-size: 16pt;
+}
+.experience h2, p{
+    font-size: 13pt;
+}
+
+@media (max-width: 975px){
+    .experience{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+    
+    #exp2{
+        margin-top: 20px;
+    }
+
+
+}
+
+@media (max-width: 480px){
+    #exp1, #exp2{
+        width: 350px;
+    }
+}
